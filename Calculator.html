@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <form name="form1">
+    <fieldset>
+        <legend>Calculator</legend>
+        First Number:
+        <input type="text" name="firstNumber">
+        <br><br>
+        Second Number:
+        <input type="text" name="secondNumber">
+        <br><br>
+        Result:
+        <output name="result"></output>
+        <br><br>
+        <button type="button" onclick="Add()">+</button>
+        <button type="button" onclick="Subtract()">-</button>
+        <button type="button" onclick="Multiply()">x</button>
+        <button type="button" onclick="Divide()">/</button>
+        <button type="reset">Clear</button> 
+    </fieldset>
+    </form>
+
+</body>
+<script >
+    function Add() {
+        var a,b;
+        a = parseFloat(form1.firstNumber.value);
+        b = parseFloat(form1.secondNumber.value);
+        form1.result.value = a + b;
+    }
+    function Subtract() {
+        var a,b;
+        a = parseFloat(form1.firstNumber.value);
+        b = parseFloat(form1.secondNumber.value);
+        form1.result.value = a - b;
+    }
+    function Multiply() {
+        var a,b;
+        a = parseFloat(form1.firstNumber.value);
+        b = parseFloat(form1.secondNumber.value);
+        form1.result.value = a * b;
+    }
+    function Divide() {
+        var a,b;
+        a = parseFloat(form1.firstNumber.value);
+        b = parseFloat(form1.secondNumber.value);
+        form1.result.value = a / b;
+    }   
+</script>
+</html>

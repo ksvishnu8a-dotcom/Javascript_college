@@ -1,0 +1,19 @@
+<html> 
+<head></head><body> 
+<script> 
+function colorset(val) 
+{ 
+    document.body.style.background=val; 
+} 
+var a=[]; 
+var n=prompt("How many colors : ");
+for(let i=0;i<n;i++) 
+{ 
+    a[i]=prompt("Enter color "+(i+1)); 
+} 
+for(let i=0;i<n;i++) 
+{ 
+document.write("<input type=button onmouseover=colorset(this.value) value="+a[i]+">"); 
+} 
+</script></body> 
+</html>
